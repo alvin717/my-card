@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!-- 모바일 뷰포트 설정: 줌 방지 및 모바일 화면에 완벽 맞춤 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>힐스테이트 회룡역파크뷰 - 이진형 실장 모바일 명함</title>
+
+  <!-- 카카오톡 및 SNS 공유 시 큼직한 명함 이미지가 표시되는 Open Graph 설정 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="힐스테이트 회룡역파크뷰 | 이진형 실장">
+  <meta property="og:description" content="명함 이미지를 터치하시면 010-7675-3098 로 바로 전화 연결됩니다.">
+  <meta property="og:image" content="https://tomboy-kor.github.io/hillstate-hoeryong/card/images/card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tomboy-kor.github.io/hillstate-hoeryong/card/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- 프리미엄 폰트: Pretendard 웹폰트 적용 -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- 스타일시트 분리 로드 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 전체 모바일 래퍼 컨테이너 -->
+  <div class="mobile-container">
+    
+    <!-- 상단 헤더 영역 -->
+    <header class="app-header">
+      <span class="badge">현대건설 시공 프리미엄 단지</span>
+      <h1 class="main-title">힐스테이트 회룡역파크뷰</h1>
+      <p class="sub-title">3본부 2팀 &middot; 이진형 실장 공식 모바일 명함</p>
+    </header>
+
+    <!-- [핵심] 터치 즉시 전화 걸리는 명함 이미지 카드 -->
+    <section class="card-section">
+      <!-- 터치 안내 상단 배너 -->
+      <div class="touch-call-notice">
+        <span class="touch-icon">👆</span>
+        <span class="notice-text">아래 명함을 터치하면 <strong>010-7675-3098 로 바로 전화 연결</strong>됩니다!</span>
+      </div>
+
+      <div class="card-wrapper" id="cardTouchArea" role="button" tabindex="0" aria-label="이진형 실장 명함 이미지. 터치 시 전화가 걸립니다.">
+        <!-- 실제 명함 이미지 (원본 그대로 깨끗하게 노출) -->
+        <img src="images/card.png" alt="힐스테이트 회룡역파크뷰 이진형 실장 명함 이미지" class="business-card-img" id="cardImage">
+      </div>
+      <p class="touch-tip">※ 명함 이미지 어디를 눌러도 통화 다이얼 화면이 즉시 열립니다.</p>
+    </section>
+
+    <!-- 빠른 연락 액션 버튼 그룹 (터치 영역 44px 이상 확보) -->
+    <section class="quick-actions">
+      <!-- 전화 걸기 버튼 -->
+      <a href="tel:010-7675-3098" class="action-btn btn-call" id="btnCallMain">
+        <span class="btn-icon">📞</span>
+        <div class="btn-info">
+          <span class="btn-label">직통 전화 상담</span>
+          <strong class="btn-value">010-7675-3098</strong>
+        </div>
+      </a>
+
+      <!-- 문자 보내기 버튼 -->
+      <a href="sms:010-7675-3098" class="action-btn btn-sms" id="btnSms">
+        <span class="btn-icon">💬</span>
+        <div class="btn-info">
+          <span class="btn-label">문자 문의</span>
+          <strong class="btn-value">문자 남기기</strong>
+        </div>
+      </a>
+
+      <!-- 연락처 내 폰에 저장 버튼 -->
+      <button type="button" class="action-btn btn-vcard" id="btnSaveContact">
+        <span class="btn-icon">👤</span>
+        <div class="btn-info">
+          <span class="btn-label">스마트폰 주소록</span>
+          <strong class="btn-value">연락처 저장 (vCard)</strong>
+        </div>
+      </button>
+    </section>
+
+    <!-- 상세 정보 및 공식 링크 섹션 -->
+    <section class="detail-section">
+      <h2 class="section-title">분양 정보 및 공식 채널</h2>
+
+      <div class="link-list">
+        <!-- 공식 분양 홈페이지 -->
+        <a href="https://tomboy-kor.github.io/hillstate-hoeryong/" target="_blank" rel="noopener noreferrer" class="link-item">
+          <div class="link-icon-box site-icon">🌐</div>
+          <div class="link-content">
+            <span class="link-title">공식 분양 안내 웹사이트</span>
+            <span class="link-desc">단지 배치도, 평면도 및 상세 분양가 안내</span>
+          </div>
+          <span class="arrow-icon">&gt;</span>
+        </a>
+
+        <!-- 네이버 블로그 -->
+        <a href="https://blog.naver.com/ddasmee63" target="_blank" rel="noopener noreferrer" class="link-item">
+          <div class="link-icon-box blog-icon">📝</div>
+          <div class="link-content">
+            <span class="link-title">이진형 실장 네이버 블로그</span>
+            <span class="link-desc">최신 현장 소식과 분양 혜택 정보</span>
+          </div>
+          <span class="arrow-icon">&gt;</span>
+        </a>
+
+        <!-- 유튜브 영상 -->
+        <a href="https://www.youtube.com/watch?v=C-AsTO42Gcg" target="_blank" rel="noopener noreferrer" class="link-item">
+          <div class="link-icon-box youtube-icon">▶</div>
+          <div class="link-content">
+            <span class="link-title">유튜브 현장 안내 영상</span>
+            <span class="link-desc">영상으로 보는 회룡역파크뷰 입지 분석</span>
+          </div>
+          <span class="arrow-icon">&gt;</span>
+        </a>
+
+        <!-- 견본주택 위치 및 주소 복사 -->
+        <div class="link-item address-item" id="btnCopyAddress" role="button" tabindex="0">
+          <div class="link-icon-box map-icon">📍</div>
+          <div class="link-content">
+            <span class="link-title">견본주택(모델하우스) 위치</span>
+            <span class="link-desc">경기도 의정부시 호원동 314-7 (터치 시 주소 복사)</span>
+          </div>
+          <span class="copy-badge">주소복사</span>
+        </div>
+
+        <!-- 이메일 문의 -->
+        <a href="mailto:aonehair01@naver.com" class="link-item">
+          <div class="link-icon-box mail-icon">✉</div>
+          <div class="link-content">
+            <span class="link-title">이메일 문의</span>
+            <span class="link-desc">aonehair01@naver.com</span>
+          </div>
+          <span class="arrow-icon">&gt;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 사업 참여사 안내 -->
+    <section class="partner-section">
+      <div class="partner-item">
+        <span class="partner-role">분양대행</span>
+        <strong class="partner-name">(주)유성</strong>
+      </div>
+      <div class="partner-item">
+        <span class="partner-role">시행</span>
+        <strong class="partner-name">호원동임대주택조합</strong>
+      </div>
+      <div class="partner-item">
+        <span class="partner-role">시공</span>
+        <strong class="partner-name">현대건설</strong>
+      </div>
+      <div class="partner-item">
+        <span class="partner-role">자금관리</span>
+        <strong class="partner-name">신한자산운용</strong>
+      </div>
+    </section>
+
+    <!-- 명함 공유하기 기능 (지인 및 고객에게 전달) -->
+    <section class="share-section">
+      <h3 class="share-title">이 명함을 다른 분에게 전달하기</h3>
+      <div class="share-buttons">
+        <button type="button" class="share-btn btn-share-kakao" id="btnShareKakao">
+          💬 카카오톡으로 전달하기
+        </button>
+        <button type="button" class="share-btn btn-share-link" id="btnShareLink">
+          🔗 명함 링크 복사하기
+        </button>
+      </div>
+    </section>
+
+    <!-- 하단 여백 확보 (플로팅 버튼에 가려지지 않도록) -->
+    <div class="bottom-spacer"></div>
+
+    <!-- [GEMINI.md 필수 지침] 화면 하단 고정 전화 상담 플로팅 바 -->
+    <aside class="floating-call-bar">
+      <a href="tel:010-7675-3098" class="floating-call-link">
+        <span class="floating-icon">📞</span>
+        <span class="floating-text">이진형 실장에게 <strong>지금 바로 전화걸기</strong></span>
+      </a>
+    </aside>
+
+  </div>
+
+  <!-- 알림용 토스트 팝업 (모바일 화면 최상단 상시 고정) -->
+  <div class="toast-popup" id="toastPopup" role="status" aria-live="polite"></div>
+
+  <!-- 스크립트 로드 -->
+  <script src="script.js"></script>
+</body>
+</html>
