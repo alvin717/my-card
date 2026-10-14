@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:이;진형;;;
+FN:이진형 실장 (힐스테이트 회룡역파크뷰)
+ORG:힐스테이트 회룡역파크뷰;
+TITLE:3본부 2팀 실장
+TEL;TYPE=CELL;TYPE=VOICE;TYPE=pref:010-7675-3098
+EMAIL;TYPE=INTERNET;TYPE=WORK;TYPE=pref:aonehair01@naver.com
+ADR;TYPE=WORK;TYPE=pref:;;경기도 의정부시 호원동 288;;;;
+URL;TYPE=WORK:https://hyeong-homepage.vercel.app/
+NOTE:힐스테이트 회룡역파크뷰 공식 모바일 명함
+END:VCARD

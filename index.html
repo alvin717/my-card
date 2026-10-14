@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://alvin717.github.io/my-card/images/card.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://alvin717.github.io/my-card/">
+  <meta property="og:url" content="https://hyeong-homepage.vercel.app/?call=1">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- 프리미엄 폰트: Pretendard 웹폰트 적용 -->
@@ -30,7 +30,7 @@
     <header class="app-header">
       <span class="badge">현대건설 시공 프리미엄 단지</span>
       <h1 class="main-title">힐스테이트 회룡역파크뷰</h1>
-      <p class="sub-title">3본부 2팀 &middot; 이진형 실장 공식 모바일 명함</p>
+      <p class="sub-title">3본부 2팀 &middot; 이진형 공식 모바일 명함</p>
     </header>
 
     <!-- [핵심] 터치 즉시 전화 걸리는 명함 이미지 카드 -->
@@ -41,10 +41,11 @@
         <span class="notice-text">아래 명함을 터치하면 <strong>010-7675-3098 로 바로 전화 연결</strong>됩니다!</span>
       </div>
 
-      <div class="card-wrapper" id="cardTouchArea" role="button" tabindex="0" aria-label="이진형 실장 명함 이미지. 터치 시 전화가 걸립니다.">
+      <!-- 명함 이미지 전체가 직통 전화 걸기 링크로 작동 -->
+      <a href="tel:010-7675-3098" class="card-wrapper" id="cardTouchArea" aria-label="이진형 명함 이미지. 터치 시 010-7675-3098로 바로 전화가 걸립니다.">
         <!-- 실제 명함 이미지 (원본 그대로 깨끗하게 노출) -->
-        <img src="images/card.png" alt="힐스테이트 회룡역파크뷰 이진형 실장 명함 이미지" class="business-card-img" id="cardImage">
-      </div>
+        <img src="images/card.png" alt="힐스테이트 회룡역파크뷰 이진형 명함 이미지" class="business-card-img" id="cardImage">
+      </a>
       <p class="touch-tip">※ 명함 이미지 어디를 눌러도 통화 다이얼 화면이 즉시 열립니다.</p>
     </section>
 
@@ -68,14 +69,14 @@
         </div>
       </a>
 
-      <!-- 연락처 내 폰에 저장 버튼 -->
-      <button type="button" class="action-btn btn-vcard" id="btnSaveContact">
+      <!-- 연락처 내 폰에 저장 버튼 (표준 정적 파일 다운로드 방식) -->
+      <a href="contact.vcf" download="이진형_연락처.vcf" class="action-btn btn-vcard" id="btnSaveContact">
         <span class="btn-icon">👤</span>
         <div class="btn-info">
           <span class="btn-label">스마트폰 주소록</span>
           <strong class="btn-value">연락처 저장 (vCard)</strong>
         </div>
-      </button>
+      </a>
     </section>
 
     <!-- 상세 정보 및 공식 링크 섹션 -->
@@ -84,7 +85,7 @@
 
       <div class="link-list">
         <!-- 공식 분양 홈페이지 -->
-        <a href="https://tomboy-kor.github.io/hillstate-hoeryong/" target="_blank" rel="noopener noreferrer" class="link-item">
+        <a href="https://hyeong-homepage.vercel.app/" target="_blank" rel="noopener noreferrer" class="link-item">
           <div class="link-icon-box site-icon">🌐</div>
           <div class="link-content">
             <span class="link-title">공식 분양 안내 웹사이트</span>
@@ -93,8 +94,18 @@
           <span class="arrow-icon">&gt;</span>
         </a>
 
+        <!-- 카카오톡 1:1 오픈채팅 (신규 추가) -->
+        <a href="https://open.kakao.com/o/sCaiVWMh" target="_blank" rel="noopener noreferrer" class="link-item item-kakao-chat">
+          <div class="link-icon-box kakao-chat-icon">💬</div>
+          <div class="link-content">
+            <span class="link-title">카카오톡 1:1 오픈상담</span>
+            <span class="link-desc">부담 없이 편하게 실시간 1:1 채팅 문의</span>
+          </div>
+          <span class="chat-badge">상담연결</span>
+        </a>
+
         <!-- 네이버 블로그 -->
-        <a href="https://blog.naver.com/ddasmee63" target="_blank" rel="noopener noreferrer" class="link-item">
+        <a href="https://blog.naver.com/aonehair01" target="_blank" rel="noopener noreferrer" class="link-item">
           <div class="link-icon-box blog-icon">📝</div>
           <div class="link-content">
             <span class="link-title">이진형 실장 네이버 블로그</span>
@@ -103,22 +114,22 @@
           <span class="arrow-icon">&gt;</span>
         </a>
 
-        <!-- 유튜브 영상 -->
-        <a href="https://www.youtube.com/watch?v=C-AsTO42Gcg" target="_blank" rel="noopener noreferrer" class="link-item">
+        <!-- 유튜브 영상 및 채널 -->
+        <a href="https://www.youtube.com/@형HYEONG" target="_blank" rel="noopener noreferrer" class="link-item">
           <div class="link-icon-box youtube-icon">▶</div>
           <div class="link-content">
-            <span class="link-title">유튜브 현장 안내 영상</span>
+            <span class="link-title">유튜브 공식 채널 (@형HYEONG)</span>
             <span class="link-desc">영상으로 보는 회룡역파크뷰 입지 분석</span>
           </div>
           <span class="arrow-icon">&gt;</span>
         </a>
 
-        <!-- 견본주택 위치 및 주소 복사 -->
+        <!-- 견본주택 위치 및 주소 복사 (호원동 288 반영) -->
         <div class="link-item address-item" id="btnCopyAddress" role="button" tabindex="0">
           <div class="link-icon-box map-icon">📍</div>
           <div class="link-content">
             <span class="link-title">견본주택(모델하우스) 위치</span>
-            <span class="link-desc">경기도 의정부시 호원동 314-7 (터치 시 주소 복사)</span>
+            <span class="link-desc">경기도 의정부시 호원동 288 (터치 시 주소 복사)</span>
           </div>
           <span class="copy-badge">주소복사</span>
         </div>
@@ -155,15 +166,15 @@
       </div>
     </section>
 
-    <!-- 명함 공유하기 기능 (지인 및 고객에게 전달) -->
+    <!-- 명함 공유하기 기능 (내 카톡으로 받기 및 지인에게 전달) -->
     <section class="share-section">
-      <h3 class="share-title">이 명함을 다른 분에게 전달하기</h3>
+      <h3 class="share-title">이 명함을 내 카톡으로 보관하거나 전달하기</h3>
       <div class="share-buttons">
         <button type="button" class="share-btn btn-share-kakao" id="btnShareKakao">
-          💬 카카오톡으로 전달하기
+          💬 내 카톡으로 받기 &middot; 전달
         </button>
         <button type="button" class="share-btn btn-share-link" id="btnShareLink">
-          🔗 명함 링크 복사하기
+          🔗 명함 인터넷 주소 복사
         </button>
       </div>
     </section>
