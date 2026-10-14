@@ -24,3 +24,9 @@
 - 한국어 주석 필수
 - 이미지 alt 속성 및 외부 링크 rel="noopener noreferrer" 필수
 - HTML, CSS, JS 파일 모듈 분리 작성
+
+## 5. 배포 및 깃허브(GitHub) 저장소 규정
+- 공식 GitHub 저장소: https://github.com/alvin717/my-card.git
+- 브랜치: main
+- 자동 배포 스크립트: E:\Gemini CLI\명함앱\배포하기.bat
+- 다른 프로젝트 저장소(tomboy-kor 등)와 혼동하지 않고 항상 alvin717/my-card 저장소를 기준으로 동기화합니다.
